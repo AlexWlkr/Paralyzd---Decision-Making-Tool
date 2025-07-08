@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Paralyd! A tool, to tell you what to do when you don't know what to do.</title>
+  <title>Paralyzd!</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -37,6 +38,31 @@
     <button id="suggestBtn">Suggest</button>
     <div class="suggestion" id="suggestion"></div>
   </div>
+
+  <!-- Modal for post-choice options -->
+  <div class="modal" id="postChoiceModal">
+    <div class="modal-content">
+      <p id="pickedChoice"></p>
+      <div class="modal-actions">
+        <button id="anotherChoiceBtn">Make another choice</button>
+        <button id="startNowBtn" class="start">Start Now</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Timer Section -->
+<div class="timer-section" id="timerSection" style="display:none;">
+  <div class="motivation-note">
+    Build motivation by trying out this task for just 5 minutes and see where it takes you.
+  </div>
+  <div class="timer" id="timer">05:00</div>
+  <div class="timer-controls">
+    <button id="playBtn">Play</button>
+    <button id="pauseBtn" disabled>Pause</button>
+    <button id="resetBtn">Reset</button>
+  </div>
+</div>
+
   <script src="app.js"></script>
 </body>
 </html>
