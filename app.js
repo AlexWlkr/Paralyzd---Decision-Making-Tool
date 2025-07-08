@@ -1,6 +1,4 @@
 
-console.log("JS is connected!");
-
 const ACTIVITIES = [
   {
     type: "Do Chores",
