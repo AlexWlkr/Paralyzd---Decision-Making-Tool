@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Personal Choice Suggester</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="choice-container">
+    <h2>What should I do?</h2>
+    <label>
+      What kind of activity?
+      <select id="activityType">
+        <option value="">Select...</option>
+      </select>
+    </label>
+    <label>
+      What's your mood?
+      <select id="mood">
+        <option value="">Select...</option>
+        <option>Happy</option>
+        <option>Neutral</option>
+        <option>Sad</option>
+        <option>Anxious</option>
+        <option>Motivated</option>
+      </select>
+    </label>
+    <label>
+      Stress level?
+      <select id="stress">
+        <option value="">Select...</option>
+        <option>Low</option>
+        <option>Medium</option>
+        <option>High</option>
+      </select>
+    </label>
+    <button id="suggestBtn">Suggest</button>
+    <div class="suggestion" id="suggestion"></div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
